@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация в социальной сети</title>
+  <!-- Подключаем внешний CSS-файл -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Шапка страницы -->
+  <header class="header">
+    <h1 class="header__title">Регистрация в социальной сети</h1>
+  </header>
+
+  <!-- Основное содержимое -->
+  <main class="main-content">
+    <section class="registration-section">
+      <form id="registrationForm" class="registration-form" action="#" method="post">
+        <div class="form-group">
+          <label for="fullname" class="form-label">Полное имя:</label>
+          <input type="text" id="fullname" name="fullname" class="form-input" placeholder="Введите полное имя" required>
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" id="email" name="email" class="form-input" placeholder="Введите email" required>
+        </div>
+        <div class="form-group">
+          <label for="username" class="form-label">Имя пользователя:</label>
+          <input type="text" id="username" name="username" class="form-input" placeholder="Введите имя пользователя" required>
+        </div>
+        <div class="form-group">
+          <label for="password" class="form-label">Пароль:</label>
+          <input type="password" id="password" name="password" class="form-input" placeholder="Введите пароль" required>
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword" class="form-label">Подтвердите пароль:</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" class="form-input" placeholder="Подтвердите пароль" required>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="form-button">Зарегистрироваться</button>
+        </div>
+      </form>
+      <!-- Блок для вывода сообщений -->
+      <div id="message" class="message"></div>
+    </section>
+  </main>
+
+  <!-- Подвал страницы -->
+  <footer class="footer">
+    <p class="footer__text">© 2025 Социальная сеть</p>
+  </footer>
+
+  <!-- Подключаем внешний JS-файл -->
+  <script src="script.js"></script>
+</body>
+</html>
